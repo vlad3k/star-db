@@ -78,7 +78,7 @@ export default class SwapiService {
       crew: starship.crew,
       passengers: starship.passengers,
       cargoCapacity: starship.cargo_capacity
-    }
+    };
   };
 
   _transformPerson = (person) => {
@@ -88,6 +88,6 @@ export default class SwapiService {
       gender: person.gender,
       birthYear: person.birth_year,
       eyeColor: person.eye_color
-    }
-  }
+    };
+  };
 }
