@@ -11,6 +11,8 @@ import { SwapiServiceProvider } from '../swapi-dervice-context';
 
 import './app.css';
 
+import { BrowserRouter as router, Route } from 'react-router-dom';
+
 export default class App extends Component {
 
   state = {
@@ -34,7 +36,7 @@ export default class App extends Component {
           <div className="stardb-app">
             <Header onServiceChange={this.onServiceChange} />
 
-            <RandomPlanet />
+            <RandomPlanet updateInterval={10000} />
             <PeoplePage />
             <PlanetsPage />
             <StarshipsPage />
